@@ -42,18 +42,18 @@ services:
       - certbot-etc:/etc/letsencrypt
     networks:
       - app-network
-  certbot:
-    depends_on:
-      - webserver
-    image: certbot/certbot
-    container_name: certbot
-    volumes:
-      - certbot-etc:/etc/letsencrypt
-      - wordpress:/var/www/html
-    command: certonly --webroot --webroot-path=/var/www/html --email zjoeey@hotmail.com --agree-tos --no-eff-email --staging -d ykzird.cloud -d www.ykzird.cloud
+ # certbot:
+  #  depends_on:
+   #   - webserver
+    #image: certbot/certbot
+    #container_name: certbot
+    #volumes:
+     # - certbot-etc:/etc/letsencrypt
+     # - wordpress:/var/www/html
+    #command: certonly --webroot --webroot-path=/var/www/html --email zjoeey@hotmail.com --agree-tos --no-eff-email --staging -d ykzird.cloud -d www.ykzird.cloud
 volumes:
   certbot-etc:
-  wordpress:
+  #wordpress:
   dbdata:
 networks:
   app-network:
