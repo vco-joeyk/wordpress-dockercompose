@@ -1,4 +1,4 @@
-version: '3.8'
+# version: '3.8' >> version lijkt tegenwoordig obsolete te zijn
 services:
   db:
     image: mysql:8.0
@@ -39,7 +39,7 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
-      - certbot-etc:/etc/letsencrypt
+      #- certbot-etc:/etc/letsencrypt
     networks:
       - app-network
  # certbot:
