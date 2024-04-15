@@ -1,6 +1,8 @@
 # wordpress-dockercompose
 
 ## How to run:
+
+**Tip:** draai zonder VPN, met VPN doet het bij mij heel raar, ben er nog niet achter waarom.
 ```
 // clone deze repo naar een lokatie lokaal:
 git clone git@github.com:vco-joeyk/wordpress-dockercompose.git
