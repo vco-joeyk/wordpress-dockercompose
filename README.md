@@ -21,5 +21,9 @@ MYSQL_USER=<userName>
 MYSQL_PASSWORD=<userPassword>
 
 // breng de containers omhoog:
+// linux, niet rootless
+sudo docker compose up -d
+
+// de rest
 docker compose up -d // laat -d weg als je de containers niet detached wilt runnen
 ```
