@@ -2,7 +2,7 @@
 
 ## How to run:
 
-**Tip:** draai zonder VPN, met VPN doet het bij mij heel raar, ben er nog niet achter waarom.
+**Note:** draait momenteel zonder certbot, werkt niet heel lekker.
 ```
 // clone deze repo naar een lokatie lokaal:
 git clone git@github.com:vco-joeyk/wordpress-dockercompose.git
